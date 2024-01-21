@@ -8,4 +8,7 @@ mv docker-compose-$(uname -s)-$(uname -m) /usr/local/bin/docker-compose
 chmod -v +x /usr/local/bin/docker-compose
 systemctl enable docker.service
 systemctl start docker.service
+
+git clone https://github.com/aankittcoolest/forward-proxy.git
+docker-compose up --build -d
 ```
